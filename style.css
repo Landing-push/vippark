@@ -25,6 +25,11 @@ body {
   color: var(--white);
   line-height: 1.6;
   overflow-x: hidden;
+
+   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Header & Navigation */
