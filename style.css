@@ -32,6 +32,20 @@ body {
   background-attachment: fixed;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  body{
+    background-attachment: scroll;  /* KEY change */
+    background-position: 50% 25%;   /* nudge focus higher if needed */
+  }
+}
+
+/* Extra: target iOS Safari specifically */
+@supports (-webkit-touch-callout: none) {
+  body{
+    background-attachment: scroll;  /* override fixed on iOS */
+    background-position: 50% 25%;
+  }
+}
 /* Header & Navigation */
 .header {
   position: fixed;
